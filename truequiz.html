@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Website quiz </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript">
+        </script>
+        <script src="https://kit.fontawesome.com/760f26a1da.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Zen+Dots&display=swap">
+		<meta name="viewport" content="width=device-width, initial scale=1.0">
+		<script type="text/javascript" src="projsheet.js">
+		</script>
+	</head>
+	<!-- this page was created mainly by Peter Burke, with sidebar header and footer by Sean/Andre Dedosin-->
+	<body  id="page5">
+	
+	<div class="header">
+        <image class="sml" src="images/logo2.png" alt="icon of logo">
+        <h1 class="lName">Constellation</h1>
+		<p class="tagname">Shoot for the Stars!</p>
+    </div>
+	
+	<div class="side">
+        <a href= index4.html> <button class="button button1"><b>HTML</b></button> </a>
+		<a href= index3.html> <button class="button button2"><b>CSS</b></button> </a>
+        <a href= index.html> <button class="button button3"><b>HOME</b></button> </a>
+		<a href= index2.html> <button class="button button4"><b>FORM</b></button> </a>
+    </div>
+	
+		<div class="quiztitle1">
+			<h1> Quiz </h1>
+			</div>
+			
+			<div class = "qdiv2">
+				<!-- here we create the questions-->
+				<b>Question 1: What does HTML stand for?:<input type="text" id="q1"></b>
+				<p></p>
+				<b>Question 2: What symbol is used to close a tag?: <input type="text" id="q2"></b>
+				<p></p>
+				<b>Question 3: What tag is used to start a html page?: <input type="text" id="q3"></b>
+				<p></p>
+				<b>Question 4: In HTML, the title tag goes within the ____ tag: <input type="text" id="q4"></b>
+				<p></p>
+				<b>Question 5: What attribute is used to create a filepath?: <input type="text" id="q5"></b>
+				<p></p>
+				<b>Question 6: What does CSS stand for?: <input type="text" id="q6"></b>
+				<p></p>
+				<b>Question 7: What symbol is missing?: background image: <input type="text" id="q7"></b>
+				<p></p>
+				<b>Question 8: Which is correct h1 or hl?: <input type="text" id="q8"></b>
+				<p></p>
+				<b>Question 9: Which position value is missing? static, relative, fixed, absolute: <input type="text" id="q9"></b>
+				<p></p>
+				<b>Question 10: What is the name of our website?: <input type="text" id="q10"></b>
+				<p></p>
+				<!-- we use button instead of submit-->
+				<button type="button" onclick="validate()">click to grade</button>	
+			</form>
+			<!-- here is where our answers will show-->
+			<p id="text"></p>
+			<p id="demo"></p>
+			<!-- here is my manipulation of the DOM-->
+			<button onclick="support()" type="button"> Click for encouragement</button>
+		</div>
+		
+	<div class="footer5">
+        <div class="textI">
+			<p>Instagram<i class="fa-brands fa-instagram"></i></p>
+			<p>Youtube<i class="fa-brands fa-youtube"></i></p>
+			<p>Twitter<i class="fa-brands fa-twitter"></i></p>
+        </div>
+    </div>
+
+	</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE>
+<html>
+
+	<head>
+		<title>Form Page</title>
+		<title>Learn Html</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Zen+Dots&display=swap">
+		<link rel="stylesheet" href="styles.css">
+		<script src="https://kit.fontawesome.com/760f26a1da.js" crossorigin="anonymous"></script>
+		
+		<!-- | Mary Created | -->
+			<script type="text/javascript">
+			function validate() { 
+				//set valid to true - flag 
+				var valid = true;
+				
+				//use if statements to check the data and set the message 
+				if(document.getElementById("name").value == ""){
+	
+					valid = false;
+				}
+				
+				if(valid == true){ //!valid means not true. same as valid == false
+					alert("Thank You for submitting your Feedback!");
+				}	
+				
+				else alert ("Please fill in your name.");
+				
+				return valid;
+				
+			}
+			
+		</script> 
+	<!-- | Mary Created | -->	
+	
+	</head>
+	
+	<body id="page2">
+	
+	<!-- | FORM Page HTML Code - Mary Moraes | -->
+	
+	<!-- | Andre Created | -->
+		<div class="header">
+			<image class="sml" src="images/logo2.png" alt="icon of logo">
+        <h1 class="lName">Constellation</h1>
+		<p class="tagname">Shoot for the Stars!</p>
+		</div>
+	<!-- | Andre Created | -->	
+	
+		<br><br><br>
+	
+	<!-- | Andre Created | -->
+		<div class="side">
+			<a href= index4.html> <button class="button button1"><b>HTML</b></button> </a>
+			<a href= index3.html> <button class="button button2"><b>CSS</b></button> </a>
+			<a href= index.html> <button class="button button3"><b>HOME</b></button> </a>
+			<a href= index2.html> <button class="button button4"><b>FORM</b></button> </a>
+		</div>
+	<!-- | Andre Created | -->
+		
+		<br><br><br><br>
+		
+	<!-- | Mary Created | -->
+		<div class="formpage">
+			<h1>Please fill in this form about what you like about our website!</h1>
+		</div>
+	<!-- | Mary Created | -->
+		
+	<!-- | Mary Created | -->
+		<form onsubmit="return validate()" class="form">
+			<br><br>
+			<label>Name: </label>
+			<input type="text" id="name" placeholder="Name"/>
+			<br><br><br><br>
+			
+			<label>What was the difficulty of the quiz?</label><br>
+            <select name="difficulty" >
+				<option >Select an option</option>
+                <option>Easy</option>
+                <option>Okay</option>
+                <option>Hard</option>
+				<option>Difficult</option>
+            </select><br><br><br><br>
+			
+			<label> What pages of our website did you enjoy? </label><br>
+			&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" id="page1" name="page1" value="Homepage">
+			<label for="page1"> Homepage</label><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="checkbox" id="page2" name="page2" value="HTML page">
+			<label for="page2"> HTML page</label><br>
+			&nbsp;
+			<input type="checkbox" id="page3" name="page3" value="CSS page">
+			<label for="page3"> CSS page</label><br>
+			&nbsp;&nbsp;
+			<input type="checkbox" id="page4" name="page4" value="Quiz page">
+			<label for="page4"> Quiz page</label><br><br><br><br>
+		
+		
+			<label> Did you enjoy our website? </label><br>
+			&nbsp;&nbsp;
+			<input type="radio" id="yes" name="ans" value="Yes">
+			<label for="yes">Yes</label><br>
+			&nbsp;
+			<input type="radio" id="no" name="ans" value="No">
+			<label for="no">No</label><br>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="radio" id="maybe" name="ans" value="Maybe">
+			<label for="maybe">Maybe</label><br><br>
+			
+			<p id="msge"></p>
+			
+			
+			<br>
+			<button class="formbutton" type="submit" >Submit your Feedback</button>
+		
+			<br><br><br><br>
+			
+		</form>
+	<!-- | Mary Created | -->
+		
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		<br><br><br><br><br><br>
+		
+	<!-- | Andre Created | -->
+		<div class="footer4">
+			<div class="textI">
+				<p>Instagram<i class="fa-brands fa-instagram"></i></p>
+				<p>Youtube<i class="fa-brands fa-youtube"></i></p>
+				<p>Twitter<i class="fa-brands fa-twitter"></i></p>
+			</div>
+		</div>
+	<!-- | Andre Created | -->
+	
+	</body>
+	
+</html>
